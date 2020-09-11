@@ -69,7 +69,7 @@ class CMakeBuild(build_ext):
 
 setup(
     name='pyonmi',
-    version='0.1',
+    version='1.0',
     author='Angel Panizo',
     author_email='angel.panizo@upm.es',
     description='a python module to calculate the overlaping NMI of two sets',

@@ -414,7 +414,7 @@ pair<double,double> omega(const NodeToGroup &ng1, const NodeToGroup &ng2) {
 	return make_pair(O,L2norm);
 }
 
-float oNMI(const Grouping g1, const Grouping g2, const bool do_omega_also) {
+float oNMI(const Grouping g1, const Grouping g2) {
 	// Grouping g1 = fileToSet(file1);
 	// Grouping g2 = fileToSet(file2);
 	PP1_v(g1.size());
@@ -447,14 +447,14 @@ float oNMI(const Grouping g1, const Grouping g2, const bool do_omega_also) {
 	// 	}
 	// 	cout << "Here:" << endl;
 	// }
-	const double LFKnmi_ = LFKNMI(om, omFlipped, g1, g2);
-	if(do_omega_also) {
-		pair<double,double> OmegaAndL2Norm = omega(n2g1, n2g2);
-		const double Omega = OmegaAndL2Norm.first;
-		const double L2norm = OmegaAndL2Norm.second;
-		cout << "Datum:\t"; PP(Omega);
-		cout << "Datum:\t"; PP(L2norm);
-	}
+	// const double LFKnmi_ = LFKNMI(om, omFlipped, g1, g2);
+	// if(do_omega_also) {
+	// 	pair<double,double> OmegaAndL2Norm = omega(n2g1, n2g2);
+	// 	const double Omega = OmegaAndL2Norm.first;
+	// 	const double L2norm = OmegaAndL2Norm.second;
+	// 	cout << "Datum:\t"; PP(Omega);
+	// 	cout << "Datum:\t"; PP(L2norm);
+	// }
 	// cout << "NMI<Max>:\t"; cout << aaronNMI<Max>(om, omFlipped, g1, g2) << endl;
 	// cout << "Other measures:" << endl;
 	// cout << "  lfkNMI:\t"; cout << LFKnmi_ << endl;
