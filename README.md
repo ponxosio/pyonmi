@@ -13,8 +13,13 @@ Our method is based on the method described in Appendix B at the end of:
   http://iopscience.iop.org/1367-2630/11/3/033015/
   
 # Dependencies
+ * python3
+ * cmake
   
 # How to install
+```
+ python3 setup.py install
+```
   
 # How to use
 
@@ -22,9 +27,10 @@ Our method is based on the method described in Appendix B at the end of:
   import pyonmi
   
   grouping_1 = [set(["1", "2", "3"]),set(["4", "5", "6"])]
-  grouping_2 = [set(["1", "2", "3", "7"]),set(["4", "5", "6"])]
+  grouping_2 = [set(["1", "2", "3"]),set(["4", "5", "6"])]
   
   max_overlapping_nmi = pyonmi.oNMI(grouping_1, grouping_2)
+  # max_overlapping_nmi = 1.0
 ```
   
   
