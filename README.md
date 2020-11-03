@@ -17,6 +17,13 @@ Our method is based on the method described in Appendix B at the end of:
  * cmake
   
 # How to install
+
+use pip
+```
+pip install pyonmi
+```
+
+or install from sources
 ```
  python3 setup.py install
 ```
